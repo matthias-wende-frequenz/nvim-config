@@ -19,6 +19,8 @@ keymap("n", "<S-t>", ":tabnew<CR>", opts)
 keymap("n", "<A-.>", ":tabnext<CR>", opts)
 keymap("n", "<A-,>", ":tabprev<CR>", opts)
 keymap("n", "<leader>tc", ":tabclose<CR>", opts)
+keymap("n", ",t", ":tabnew<CR>", opts)
+keymap("n", ",,", ":Files<CR>", opts)
 
 -- Buffer managementj
 keymap("n", "<S-h>", ":bp<CR>", opts)

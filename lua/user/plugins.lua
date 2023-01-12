@@ -56,6 +56,7 @@ return packer.startup(function(use)
     use "machakann/vim-highlightedyank"
     use "tomtom/tcomment_vim"
     use "peterhoeg/vim-qml"
+    use "junegunn/fzf.vim"
     use "rhysd/conflict-marker.vim"     -- Better highlight of git conflict markers and ability to easier jump around
     use {
         'nvim-lualine/lualine.nvim',
@@ -89,13 +90,17 @@ return packer.startup(function(use)
     }
 
     -- ✅ Colorschemes
+    use "NLKNguyen/papercolor-theme"
     use "lunarvim/colorschemes"
+    use "ericbn/vim-solarized"
     -- use "lunarvim/darkplus.nvim"
     -- use "folke/tokyonight.nvim"
     -- use "ellisonleao/gruvbox.nvim"
     -- use "lifepillar/vim-gruvbox8"
     -- use "joshdick/onedark.vim"
     use "olimorris/onedarkpro.nvim"
+    use "arcticicestudio/nord-vim"
+    -- use "cocopon/iceberg.vim"
 
     -- snippets
     use "L3MON4D3/LuaSnip" --snippet engine

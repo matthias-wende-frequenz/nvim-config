@@ -6,15 +6,16 @@
 -- end
 
 vim.cmd [[
-    set background=dark
+    set background=light " required to ensure it's using the dark theme
 
     let g:onedark_terminal_italics = 1
     let g:onedark_hide_endofbuffer = 1
+    colorscheme PaperColor
 
     hi link LspComment Comment
 
     if &background == 'dark'
-        colorscheme onedark
+        colorscheme nord
         hi Search gui=bold guifg=yellow
         hi LspReferenceText  gui=none guibg=#393939 "guifg=#C0C0C0
         hi LspReferenceRead  gui=bold guibg=#309930 "guifg=#FFFFFF
@@ -24,7 +25,7 @@ vim.cmd [[
         "hi LspReferenceRead  gui=bold guibg=#c9f9c9 "guifg=#FFFFFF
         "hi LspReferenceWrite gui=bold guibg=#f9c0c0 "guifg=#FFFFFF
     else
-        colorscheme onelight
+        colorscheme PaperColor
         hi LspReferenceText  gui=none guibg=#e9e9e9 "guifg=#C0C0C0
         hi LspReferenceRead  gui=bold guibg=#c9f9c9 "guifg=#FFFFFF
         hi LspReferenceWrite gui=bold guibg=#f9c0c0 "guifg=#FFFFFF
