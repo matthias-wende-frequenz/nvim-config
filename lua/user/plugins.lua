@@ -144,6 +144,8 @@ return packer.startup(function(use)
 
     -- Prettier
     use "prettier/vim-prettier"
+    -- multi cursors
+    use "mg979/vim-visual-multi"
 
     -- Github copilot
     -- use "github/copilot.vim"
