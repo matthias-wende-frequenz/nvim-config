@@ -17,6 +17,10 @@ lspconfig.pyright.setup {
     on_attach = lspHandlers.on_attach,
     capabilities = lspHandlers.capabilities,
 }
+lspconfig.ruff_lsp.setup {
+    on_attach = lspHandlers.on_attach,
+    capabilities = lspHandlers.capabilities,
+}
 lspconfig.sumneko_lua.setup {
     on_attach = lspHandlers.on_attach,
     capabilities = lspHandlers.capabilities,
