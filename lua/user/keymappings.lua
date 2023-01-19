@@ -40,10 +40,10 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "<C-e>", ":NvimTreeToggle<cr>", opts)
 
 -- ✅ Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-A-Up>", ":resize -2<CR>", opts)
+keymap("n", "<C-A-Down>", ":resize +2<CR>", opts)
+keymap("n", "<C-A-Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-A-Right>", ":vertical resize +2<CR>", opts)
 
 -- ✅ Navigate buffers
 -- keymap("n", "<S-l>", ":bnext<CR>", opts)
