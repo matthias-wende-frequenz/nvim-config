@@ -41,6 +41,7 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
     -- ✅ MY PLUGINS HERE
+    use "github/copilot.vim"
     use "wbthomason/packer.nvim"        -- Have packer manage itself
     use "nvim-lua/popup.nvim"           -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim"         -- Useful lua functions used ny lots of plugins
@@ -80,7 +81,7 @@ return packer.startup(function(use)
                 -- or leave it empty to use the default settings
                 -- refer to the configuration section below
                 height = 5,
-                auto_open = true, -- automatically open the list when you have diagnostics
+                -- auto_open = true, -- automatically open the list when you have diagnostics
                 auto_close = false, -- automatically close the list when you have no diagnostics
                 auto_preview = true, -- automatyically preview the location of the diagnostic. <esc> to close preview and go back to last window
                 auto_fold = false, -- automatically fold a file trouble list at creation

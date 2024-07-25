@@ -73,7 +73,7 @@ function ToggleTheme()
         vim.cmd("colorscheme onelight")
         -- vim.cmd("set background light")
     else
-        vim.cmd("colorscheme onedark")
+        vim.cmd("colorscheme PaperColor")
         vim.o.background = 'dark'
         -- vim.cmd("set background dark")
     end

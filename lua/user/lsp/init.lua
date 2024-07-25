@@ -21,7 +21,7 @@ lspconfig.ruff_lsp.setup {
     on_attach = lspHandlers.on_attach,
     capabilities = lspHandlers.capabilities,
 }
-lspconfig.sumneko_lua.setup {
+lspconfig.lua_ls.setup {
     on_attach = lspHandlers.on_attach,
     capabilities = lspHandlers.capabilities,
     settings = {
@@ -44,6 +44,28 @@ lspconfig.clangd.setup {
             -- trace = "/tmp/clangd.trace.log",
 		},
 	},
+}
+lspconfig.rust_analyzer.setup {
+    on_attach = lspHandlers.on_attach,
+    capabilities = lspHandlers.capabilities,
+    settings = {
+        ["rust-analyzer"] = {
+            imports = {
+                granularity = {
+                    group = "module",
+                },
+                prefix = "self",
+            },
+            cargo = {
+                buildScripts = {
+                    enable = true,
+                },
+            },
+            procMacro = {
+                enable = true
+            },
+        }
+    }
 }
 
 vim.cmd [[
